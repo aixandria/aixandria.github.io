@@ -12,6 +12,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="index.styles.css">
+
+  <style>
+    @media (max-width: 576px) { /* Target devices with maximum width of 576px (phones) */
+      .embed-responsive-16by9 {
+        height: 800px; /* Set a default height for phones */
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,8 +42,8 @@
     </div>
 
 
-
-    <div class="row">
+    <!-- TODO: gaurantee this is larger in terms of height on PHONE -->
+    <!-- <div class="row">
       <div class="col">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"
@@ -43,7 +51,16 @@
         </div>
       </div>
 
+    </div> -->
+    <div class="row">
+      <div class="col-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"
+            frameborder="0"></iframe>
+        </div>
+      </div>
     </div>
+    
 
   </div>
 
